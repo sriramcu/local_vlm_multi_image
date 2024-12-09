@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image
 
 def combine_images_vertically(images, padding=50, background_color=(255, 255, 255)):
     """
