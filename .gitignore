@@ -1,2 +1,5 @@
 *.jpg
 saved_models/
+__pycache__/
+*.pyc
+*.pyo
