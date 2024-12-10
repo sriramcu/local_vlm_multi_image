@@ -21,6 +21,8 @@ This project uses only LLM inference. The inference is completely offline, witho
 
 Provide any number of image paths as arguments. These images will be vertically combined and fed into the LLM for inference.
 
-On the first run, the model will be downloaded and saved for future use in the `saved_models` directory. This will take a few minutes and requires internet connection. On subssequent runs, the model will be loaded from the saved directory. The program does this by automatically checking for the existence of the `saved_models` directory. 
+**On the first run**, the model will be downloaded and saved for future use in the `saved_models` directory. This will take a few minutes and requires internet connection.   
 
-**Note:** The program uses Noisy Float 4-bit quantization. 
+**On subsequent runs**, the model will be loaded from the saved directory. The program does this by automatically checking for the existence of the `saved_models` directory. When the model is loaded from this directory, the inference can be run offline, i.e. without any internet connection.
+
+**Note:** The program uses Noisy Float 4-bit quantization of the model.
